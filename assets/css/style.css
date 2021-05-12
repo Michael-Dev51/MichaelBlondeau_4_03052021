@@ -1,3 +1,5 @@
+* {
+    box-sizing: border-box; }
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +8,27 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.navbar-header{
+    display: flex;
+}
+p {
+    font-size: 11px;
+}
+.h1 {
+    font-size: 20px;
+    font-family: "Open Sans";
+}
+h2 {
+    font-size: 22px;
+    line-height: 1.4em;
+    text-align: center;
+}
+h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333!important;
+}
 a,
 button {
     transition: all .3s ease-in-out;
@@ -91,7 +113,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("../img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -299,6 +321,7 @@ a:hover {
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
+    flex-basis: 90%;
 }
 
 .navbar-brand img {
@@ -340,6 +363,7 @@ a:hover {
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
+    flex-basis: 10%;
 }
 
 .navbar-toggle:hover {
@@ -824,20 +848,12 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 11px;
-}
+
 
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
 }
-
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
-}
-
 .cta-hero {
     margin-top: 22px;
     color: #FFFFFF!important;
@@ -851,19 +867,6 @@ p {
     max-width: 400px;
     margin: auto auto auto auto;
 }
-
-h2 {
-    font-size: 22px;
-    line-height: 1.4em;
-}
-
-h3 {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #333333!important;
-}
-
 .med-width-whitespace {
     max-width: 800px;
     margin: auto auto auto auto;
@@ -973,11 +976,7 @@ h4 {
     background-image: url("../img/image-de-presentation.bmp");
 }
 
-@media (max-width: 1024px) {
-    .bloc {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+@media (max-width: 1024px) {    
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
     .bloc-tile-3.full-width-bloc .container,
