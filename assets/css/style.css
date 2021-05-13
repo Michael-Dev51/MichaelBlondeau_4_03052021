@@ -12,19 +12,19 @@ body {
     display: flex;
 }
 p {
-    font-size: 11px;
+    font-size: 1em;
 }
-.h1 {
-    font-size: 20px;
+.bloc h1 {
+    font-size: 2.6em;
     font-family: "Open Sans";
 }
 h2 {
-    font-size: 22px;
+    font-size: 1.8em;
     line-height: 1.4em;
     text-align: center;
 }
 h3 {
-    font-size: 15px;
+    font-size: 1em;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -305,10 +305,6 @@ a:hover {
     padding-left: 0;
 }
 
-#bloc-1-hero h1 {
-    font-size: 2em;
-}
-
 .navbar {
     margin-bottom: 0;
     z-index: 1;
@@ -392,11 +388,7 @@ a:hover {
     }
 }
 
-@media (max-width: 767px) {
-    .page-container {
-        overflow-x: hidden;
-        position: relative;
-    }
+@media (max-width: 767px) {    
     .bloc-mob-center-text {
         text-align: center;
     }
@@ -825,19 +817,15 @@ a {
     font-weight: 400;
     color: #575757!important;
 }
-
 .container {
     max-width: 1000px;
 }
-
 .hero-bloc-text {
     font-size: 38px;
 }
-
 .hero-bloc-text-sub {
     font-size: 36px;
 }
-
 .statement-bloc-text {
     line-height: 26px;
     font-style: italic;
@@ -847,9 +835,6 @@ a {
     max-width: 520px;
     margin: auto auto auto auto;
 }
-
-
-
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
@@ -862,7 +847,6 @@ a {
     font-size: 16px;
     font-weight: 700;
 }
-
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
@@ -872,106 +856,82 @@ a {
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
 }
-
 h1 {
     color: #333333!important;
 }
-
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
 }
-
 .white {
     color: #FFFFFF!important;
 }
-
 .portfolio-thumb {
     margin-bottom: 24px;
 }
-
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
 }
-
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
-
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
     padding: 40px 40px 40px 40px;
 }
-
 .bold-link {
     font-weight: 900;
     text-decoration: underline!important;
 }
-
 .bgc-white {
     background-color: #FFFFFF;
 }
-
 .bgc-dark-slate-blue {
     background-color: #364577;
 }
-
 .bgc-atomic-tangerine {
     background-color: #F3976C;
 }
-
 .tc-white {
     color: #F3976C!important;
 }
-
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF!important;
 }
-
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
     color: #FFFFFF!important;
 }
-
 .ltc-white {
     color: #FFFFFF!important;
 }
-
 .ltc-white:hover {
     color: #cccccc!important;
 }
-
 .ltc-atomic-tangerine {
     color: #F3976C!important;
 }
-
 .ltc-atomic-tangerine:hover {
     color: #c27956!important;
 }
-
 .icon-dark-slate-blue {
     color: #364577!important;
     border-color: #364577!important;
 }
-
 .bg-dots-bg {
     background-image: url("../img/dots-bg.png");
 }
-
 .bg-lines-h2-bg {
     background-image: url("../img/lines-h2-bg.png");
 }
-
 .bg-banniere {
     background-image: url("../img/la-chouette-agence-banniere.jpg");
 }
-
 .bg-presentation {
     background-image: url("../img/image-de-presentation.bmp");
 }
-
 @media (max-width: 1024px) {    
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
@@ -981,7 +941,6 @@ h1 {
         padding-right: 0;
     }
 }
-
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
         max-width: 80%
@@ -990,19 +949,16 @@ h1 {
         max-width: 100%
     }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
-
 @media (max-width: 991px) {
     .container {
         width: 100%;
@@ -1010,7 +966,6 @@ h1 {
     .b-parallax {
         background-attachment: scroll;
     }
-    .page-container,
     #hero-bloc {
         overflow-x: hidden;
         position: relative;
