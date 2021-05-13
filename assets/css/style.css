@@ -13,18 +13,22 @@ body {
 }
 p {
     font-size: 1em;
+    text-align: justify;
+}
+#bloc-4-portfolio p{
+    text-align: center;
 }
 .bloc h1 {
     font-size: 2.6em;
     font-family: "Open Sans";
 }
 h2 {
-    font-size: 1.8em;
+    font-size: 1.95em;
     line-height: 1.4em;
     text-align: center;
 }
 h3 {
-    font-size: 1em;
+    font-size: 1.2em;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
