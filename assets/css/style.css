@@ -32,7 +32,7 @@ p {
     
 }
 .tc-white {
-    color: #F3976C!important;
+    color: #FADFD1!important;
 }
 .tc-yellow {
     color: rgb(252,207,111) !important;
@@ -399,6 +399,11 @@ button {
     border-color: rgba(0,0,0,.1);
     box-shadow: none;
 }
+.form-control:focus{
+    border-color: rgb(186, 115, 83);
+    background-color:rgb(186, 115, 83,.2);
+    color: rgb(186, 115, 83);
+}
 .scrollToTop {
     z-index: 500;    
     right: 10px;
@@ -618,10 +623,10 @@ h3 {
     background-color: #364577;
 }
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #92360C;
 }
 .btn-atomic-tangerine {    
-    background: #F3976C;
+    background: #92360C;
     color: #FFF!important;
 }
 .btn-atomic-tangerine:hover {
