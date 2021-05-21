@@ -307,9 +307,6 @@ p {
     font-size: 25px;
     color: black!important;
 }
-.navbar-header img {
-    height: 40px;
-}
 .nav-invert .navbar-header,
 .nav-invert .navbar-brand {
     z-index: 2;
@@ -404,8 +401,8 @@ button {
 }
 .scrollToTop {
     z-index: 500;    
-    right: 20px;
-    bottom: 20px;
+    right: 10px;
+    bottom: 10px;
     width: 40px;
     height: 40px;
     position: fixed;
@@ -659,6 +656,12 @@ h3 {
 .bg-presentation {
     background-image: url(../img/image-de-presentation.bmp);
 }
+#bloc-8 .col-sm-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;        
+    }
 @media(max-width:320px) {
     .navbar-header p {
         font-size: 18px;
@@ -671,12 +674,7 @@ h3 {
 	.social {
         flex-direction: column;
         margin:10px;
-    }
-    #bloc-8 .col-sm-4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
+    }    
 	 .bloc {
        padding-left: 0;
        padding-right: 0;
@@ -693,6 +691,9 @@ h3 {
     }
     .b-parallax {
         background-attachment: scroll;
+    }
+    .navbar-header img {
+        height: 40px;
     }
     .navbar .nav {
         padding-top: 0;
@@ -815,6 +816,12 @@ h3 {
         width: 180px;
         height: 320px;
     }
+    #bloc-8 .col-sm-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    
 }
 @media(min-width:768px) {
     .site-navigation {
@@ -855,12 +862,11 @@ h3 {
         float: none;
         margin: 10px auto 0;
     }
-    .col-sm-4 {
-    	width: 100%;
-    }
+    
     #bloc-8 ul {
     	display: flex;
     	justify-content: space-around;
+        width: 720px;
     }
 }
 @media(max-width:991px) {
