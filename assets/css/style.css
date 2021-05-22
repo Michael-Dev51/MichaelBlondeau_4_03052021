@@ -674,6 +674,11 @@ h3 {
 #bloc-3-what-i-do .col-sm-12 p {
     color: white;
 }
+#bloc-6 p {
+    color: #fff;
+    text-align: center;
+    max-width: 600px;
+}
 #bloc-8 .col-sm-4 {
     display: flex;
     flex-direction: column;
@@ -682,6 +687,14 @@ h3 {
     }
 #bloc-8 .col-sm-4 ul {
     margin-top: 10px;
+}
+
+#bloc-9 .row {
+    text-align: justify;
+}
+.low-link{
+    list-style: none;
+    padding: 0;
 }
 @media(max-width:320px) {
     .navbar-header p {
