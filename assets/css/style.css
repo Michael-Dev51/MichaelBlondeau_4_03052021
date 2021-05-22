@@ -8,13 +8,22 @@ body {
 }
 a,
 button {
-    outline: none!important;
+    
     transition: all .3s ease-in-out;
     font-size: 1.6rem;
 }
 a:hover {
     text-decoration: none;
     cursor: pointer;
+}
+a:focus{
+    outline: 1px solid rgb(255, 208, 37);
+    outline-offset: 4px;
+    text-decoration: none;
+}
+#bloc-5-cta a:focus{
+    outline: none;
+    box-shadow: 0 0 0 1px white, 0 0 0 2px rgb(255, 208, 37);
 }
 #page-loading-blocs-notifaction {
     z-index: 100000;
@@ -25,7 +34,7 @@ a:hover {
     background: #FFF url(../img/pageload-spinner.gif) no-repeat center center;
 }
 #bloc-1-hero h1 {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     font-family: "Open Sans";
 }
 p {
@@ -33,10 +42,10 @@ p {
     
 }
 .tc-white {
-    color: #FADFD1!important;
+    color: #Fff4E9!important;
 }
 .tc-yellow {
-    color: rgb(252,207,111) !important;
+    color: rgb(253,225,166) !important;
 }
 .bloc {
     clear: both;
@@ -174,7 +183,7 @@ p {
 }
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0,0,0,.5);
+    color: rgba(0,0,0,.7);
 }
 .d-bloc .panel button:hover,
 .l-bloc button:hover {
@@ -525,7 +534,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: hsla(200,0%,0%,.7) !important;
+    color: hsla(200,0%,0%,.7);
 }
 .container {
     max-width: 1000px;
@@ -578,7 +587,7 @@ a {
 }
 h2 {
     position: relative;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     line-height: 1.4em;
 }
 h3 {
@@ -610,7 +619,7 @@ h3 {
     box-shadow: 0 4px 9px rgba(0,0,0,.3);
 }
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(165, 147, 99, 0.5);
     padding: 40px 40px 40px 40px;
 }
 .bold-link {
@@ -662,12 +671,18 @@ h3 {
 .bg-presentation {
     background-image: url(../img/image-de-presentation.bmp);
 }
+#bloc-3-what-i-do .col-sm-12 p {
+    color: white;
+}
 #bloc-8 .col-sm-4 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;        
     }
+#bloc-8 .col-sm-4 ul {
+    margin-top: 10px;
+}
 @media(max-width:320px) {
     .navbar-header p {
         font-size: 18px;
@@ -827,6 +842,9 @@ h3 {
         flex-direction: column;
         align-items: center;
         }
+    #bloc-8 .col-sm-4 li {
+        margin-bottom: 10px;
+    }
     
 }
 @media(min-width:768px) {
