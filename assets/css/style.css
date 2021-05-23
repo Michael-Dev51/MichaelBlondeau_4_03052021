@@ -7,8 +7,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 a,
-button {
-    
+button {    
     transition: all .3s ease-in-out;
     font-size: 1.6rem;
 }
@@ -34,8 +33,7 @@ a:focus{
     font-family: "Open Sans";
 }
 p {
-    font-size: 1.5rem;
-    
+    font-size: 1.5rem;    
 }
 .tc-white {
     color: #Fff4E9!important;
@@ -687,7 +685,6 @@ h3 {
 #bloc-8 .col-sm-4 a {
     color: #fff;
 }
-
 #bloc-9 .row {
     text-align: center;
 }
@@ -867,8 +864,7 @@ caption {
         }
     #bloc-8 .col-sm-4 li {
         margin-bottom: 10px;
-    }
-    
+    }    
 }
 @media(min-width:768px) {
     .site-navigation {
@@ -908,8 +904,7 @@ caption {
     .nav-center.mini-nav .navbar-toggle {
         float: none;
         margin: 10px auto 0;
-    }
-    
+    }    
     #bloc-8 ul {
     	display: flex;
     	justify-content: space-around;
