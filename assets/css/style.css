@@ -13,17 +13,13 @@ button {
     font-size: 1.6rem;
 }
 a:hover {
+    color: rgb(0, 0, 0, 0.5);
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer;    
 }
-a:focus{
-    outline: 1px solid rgb(255, 208, 37);
-    outline-offset: 4px;
+a:focus{    
     text-decoration: none;
-}
-#bloc-5-cta a:focus{
-    outline: none;
-    box-shadow: 0 0 0 1px white, 0 0 0 2px rgb(255, 208, 37);
+    outline-offset: 2px;
 }
 #page-loading-blocs-notifaction {
     z-index: 100000;
@@ -226,7 +222,7 @@ p {
 .l-bloc h2 a:hover,
 .l-bloc h3 a:hover,
 .l-bloc p a:hover {
-    color: rgba(0,0,0,1);
+    color: rgba(0,0,0,1);    
 }
 .l-bloc .navbar-toggle .icon-bar {
     color: rgba(0,0,0,.6);
@@ -687,6 +683,9 @@ h3 {
     }
 #bloc-8 .col-sm-4 ul {
     margin-top: 10px;
+}
+#bloc-8 .col-sm-4 a {
+    color: #fff;
 }
 
 #bloc-9 .row {
