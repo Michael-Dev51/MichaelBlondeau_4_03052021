@@ -7,16 +7,13 @@ $(function()
 	 	{			
 			if(!$form.attr('action')) // Check form doesnt have action attribute
 			{
-				event.preventDefault(); // prevent default submit behaviour
-			
+				event.preventDefault(); // prevent default submit behaviour			
 				var processorFile = getProcessorPath($form);
 				var formData = {};
-
 				$form.find("input, textarea, option:selected").each(function(e) // Loop over form objects build data object
 				{		
 					var fieldData =  $(this).val();
-					var fieldID =  $(this).attr('id');
-				
+					var fieldID =  $(this).attr('id');				
 					if($(this).is(':checkbox')) // Handle Checkboxes
 					{
 						fieldData = $(this).is(":checked");
@@ -28,8 +25,7 @@ $(function()
 					else if($(this).is('option:selected')) // Handle Option Selects
 					{
 						fieldID = $(this).parent().attr('id');
-					}
-					
+					}					
 					formData[fieldID] = fieldData;		
 				});
 	
@@ -47,8 +43,7 @@ $(function()
 						else // Re-Direct
 						{
 							window.location.replace($form.attr('success-url'));
-						}	
-						
+						}						
 						$form.trigger("reset"); // Clear Form	
 		 	   		},
 			   		error: function() // Fail
@@ -65,18 +60,15 @@ $(function()
 		 {
 			 return $(this).is(":visible");
          },
-	 });
-	 
+	 });	 
 	 // Get Path to processor PHP file
 	 function getProcessorPath(form)
 	 {
-		var path = "./includes/"+form.attr('id')+".php";
-		
+		var path = "./includes/"+form.attr('id')+".php";		
 		if(form.attr('template-path')) // Check For Template path
 		{
 			path = form.attr('template-path')+"/includes/"+form.attr('id')+".php";
-		}
-		
+		}		
 	 	return path
 	 }
 });
