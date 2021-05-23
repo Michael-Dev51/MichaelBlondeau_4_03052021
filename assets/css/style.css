@@ -8,12 +8,22 @@ body {
 }
 a,
 button {
-    outline: none!important;
+    
     transition: all .3s ease-in-out;
+    font-size: 1.6rem;
 }
 a:hover {
     text-decoration: none;
     cursor: pointer;
+}
+a:focus{
+    outline: 1px solid rgb(255, 208, 37);
+    outline-offset: 4px;
+    text-decoration: none;
+}
+#bloc-5-cta a:focus{
+    outline: none;
+    box-shadow: 0 0 0 1px white, 0 0 0 2px rgb(255, 208, 37);
 }
 #page-loading-blocs-notifaction {
     z-index: 100000;
@@ -24,7 +34,7 @@ a:hover {
     background: #FFF url(../img/pageload-spinner.gif) no-repeat center center;
 }
 #bloc-1-hero h1 {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     font-family: "Open Sans";
 }
 p {
@@ -32,10 +42,10 @@ p {
     
 }
 .tc-white {
-    color: #F3976C!important;
+    color: #Fff4E9!important;
 }
 .tc-yellow {
-    color: rgb(252,207,111) !important;
+    color: rgb(253,225,166) !important;
 }
 .bloc {
     clear: both;
@@ -173,7 +183,7 @@ p {
 }
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0,0,0,.5);
+    color: rgba(0,0,0,.7);
 }
 .d-bloc .panel button:hover,
 .l-bloc button:hover {
@@ -275,7 +285,7 @@ p {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
@@ -399,6 +409,11 @@ button {
     border-color: rgba(0,0,0,.1);
     box-shadow: none;
 }
+.form-control:focus{
+    border-color: rgb(186, 115, 83);
+    background-color:rgb(186, 115, 83,.2);
+    color: rgb(186, 115, 83);
+}
 .scrollToTop {
     z-index: 500;    
     right: 10px;
@@ -519,7 +534,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: hsla(200,0%,0%,.7) !important;
+    color: hsla(200,0%,0%,.7);
 }
 .container {
     max-width: 1000px;
@@ -572,11 +587,11 @@ a {
 }
 h2 {
     position: relative;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     line-height: 1.4em;
 }
 h3 {
-    font-size: 15px;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 700;
     color: #333!important;
@@ -604,7 +619,7 @@ h3 {
     box-shadow: 0 4px 9px rgba(0,0,0,.3);
 }
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(165, 147, 99, 0.5);
     padding: 40px 40px 40px 40px;
 }
 .bold-link {
@@ -618,10 +633,10 @@ h3 {
     background-color: #364577;
 }
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #92360C;
 }
 .btn-atomic-tangerine {    
-    background: #F3976C;
+    background: #92360C;
     color: #FFF!important;
 }
 .btn-atomic-tangerine:hover {
@@ -656,12 +671,42 @@ h3 {
 .bg-presentation {
     background-image: url(../img/image-de-presentation.bmp);
 }
+#bloc-3-what-i-do .col-sm-12 p {
+    color: white;
+}
+#bloc-6 p {
+    color: #fff;
+    text-align: center;
+    max-width: 600px;
+}
 #bloc-8 .col-sm-4 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;        
     }
+#bloc-8 .col-sm-4 ul {
+    margin-top: 10px;
+}
+
+#bloc-9 .row {
+    text-align: center;
+}
+.low-link{
+    list-style: none;
+    padding: 0;
+}
+table{
+    border-collapse: collapse;    
+}
+td, th {
+    border: 1px solid;
+    padding: 5px;
+}
+caption {
+    font-size: 2.5rem;
+    text-align: center;
+}
 @media(max-width:320px) {
     .navbar-header p {
         font-size: 18px;
@@ -821,6 +866,9 @@ h3 {
         flex-direction: column;
         align-items: center;
         }
+    #bloc-8 .col-sm-4 li {
+        margin-bottom: 10px;
+    }
     
 }
 @media(min-width:768px) {
