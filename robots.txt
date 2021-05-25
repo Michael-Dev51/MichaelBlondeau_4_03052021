@@ -1,0 +1,5 @@
+# Site laisser libre à tous les robots
+User-Agent: *
+Disallow:
+
+Sitemap: https://michael-blondeau.fr/MichaelBlondeau_4_03052021/Sitemap.xml
