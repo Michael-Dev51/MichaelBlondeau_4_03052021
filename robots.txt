@@ -2,4 +2,4 @@
 User-Agent: *
 Disallow:
 
-Sitemap: https://michael-blondeau.fr/MichaelBlondeau_4_03052021/Sitemap.xml
+Sitemap: https://la-chouette-agence.michael-blondeau.fr/Sitemap.xml
