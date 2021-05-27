@@ -1,6 +1,9 @@
 RewriteEngine on
 #Rewrite from http to https
-RewriteCond %{HTTPS} !=on
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} !on
+RewriteRule ^(.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 #Rewrite without www
 RewriteCond %{HTTP_HOST} !^la-chouette-agence.michael-blondeau.fr$ [NC]
 RewriteRule .* https://la-chouette-agence.michael-blondeau.fr%{REQUEST_URI} [R=301,L]
