@@ -1,3 +1,13 @@
+# GZIP Apache 2.0
+# BEGIN GZIP
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript
+
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+# END GZIP
 RewriteEngine on
 #Rewrite from http to https
 RewriteEngine On
@@ -37,7 +47,7 @@ Header unset Cache-Control
  ExpiresByType image/gif "access plus 1 month"
  ExpiresByType text/css "access plus 1 month"
  ExpiresByType application/x-javascript "access plus 1 month"
- ExpiresByType application/x-shockwave-flash "access plus 1 year"
+ ExpiresByType application/x-shockwave-flash "access plus 1 month"
  ExpiresByType image/x-icon "access plus 1 year" 
 </IfModule>
 # END Expire headers
