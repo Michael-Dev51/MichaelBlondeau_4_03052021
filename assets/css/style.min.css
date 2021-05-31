@@ -292,7 +292,7 @@ p {
 }
 .navbar-toggle {
 
-  margin: 10px 10px 0 0;
+  margin: 25px 10px 0 0;
   border: 0;
 }
 .navbar-toggle:hover {
@@ -311,7 +311,7 @@ p {
 .navbar-header p {
   padding: 0;
   font-family: "Viaoda Libre", cursive;
-  font-size: 2rem;
+  font-size: 2.8rem;
   color: #000;
   margin-bottom: 0;
 }
@@ -710,11 +710,7 @@ caption {
   text-align: center;
 }
 @media (max-width: 320px) {
-  .navbar-header p {
-    font-size: 1.4rem;
     
-    
-  }
 }
 @media (max-width: 400px) {
   .hero-bloc-text {
@@ -724,10 +720,17 @@ caption {
     flex-direction: column;
     margin: 10px;
   }
-  #bloc-0.bloc {
-    padding-left: 0;
-    padding-right: 0;
+  .navbar-brand img {
+    height: 40px;
+    width: 40px;
+  } 
+  .navbar-header p {
+    font-size: 1.4rem;    
   }
+  .navbar-toggle {
+      margin-top: 10px;
+  }  
+  
 }
 @media (max-width: 767px) {
   #disqus_thread,
@@ -737,6 +740,10 @@ caption {
   p {
     padding-right: 10px !important;
     padding-left: 10px !important;
+  }
+  #bloc-0.bloc {
+    padding-left: 0;
+    padding-right: 0;
   }
   .b-parallax {
     background-attachment: scroll;
@@ -793,11 +800,7 @@ caption {
     overflow-x: hidden;
     -webkit-box-shadow: none;
     box-shadow: none;
-  }
-  .navbar-brand img {
-    height: 40px;
-    width: 40px;
-  }
+  }  
   .nav-invert .navbar-header {
     float: none;
     width: 100%;
