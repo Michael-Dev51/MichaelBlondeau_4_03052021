@@ -252,6 +252,8 @@ p {
   margin-bottom: 0;
 }
 .navbar-brand {
+  display: flex; 
+  align-items: center; 
   height: auto;
   padding: 3px 3px;
   font-size: 25px;
@@ -261,7 +263,7 @@ p {
 }
 .navbar-brand img {
   display: inline;
-  margin: 0 5px 0 0;
+  margin: 0;
   max-height: 200px;
 }
 .navbar-brand img[src$="svg"] {
@@ -289,6 +291,7 @@ p {
   background: 0 0;
 }
 .navbar-toggle {
+
   margin: 10px 10px 0 0;
   border: 0;
 }
@@ -302,14 +305,15 @@ p {
 .nav-invert .navbar .nav {
   float: left;
 }
-.navbar-header a {
-  display: flex;
+.navbar-header {
+  width: 100%;
 }
 .navbar-header p {
   padding: 0;
   font-family: "Viaoda Libre", cursive;
-  font-size: 25px;
+  font-size: 2rem;
   color: #000;
+  margin-bottom: 0;
 }
 .nav-invert .navbar-brand,
 .nav-invert .navbar-header {
@@ -707,7 +711,9 @@ caption {
 }
 @media (max-width: 320px) {
   .navbar-header p {
-    font-size: 18px;
+    font-size: 1.4rem;
+    
+    
   }
 }
 @media (max-width: 400px) {
@@ -718,7 +724,7 @@ caption {
     flex-direction: column;
     margin: 10px;
   }
-  .bloc {
+  #bloc-0.bloc {
     padding-left: 0;
     padding-right: 0;
   }
