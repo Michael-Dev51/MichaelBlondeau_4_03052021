@@ -40,7 +40,7 @@ Header unset Cache-Control
 # BEGIN Expire headers
 <IfModule mod_expires.c>
  ExpiresActive On
- ExpiresDefault "access plus 30 day"
+ ExpiresDefault "access plus 2 month"
  ExpiresByType image/jpg "access plus 3 month"
  ExpiresByType image/jpeg "access plus 3 month"
  ExpiresByType image/png "access plus 3 month"
